@@ -1,0 +1,606 @@
+/* container */
+#container
+{
+    background-image:url("../assets/background.png");
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -99;
+}
+
+
+
+
+
+/* header */
+#header
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 86%;
+    box-shadow: -16px 25px 55px 10px;
+    z-index: 99;
+}
+
+    /* logo */
+#logo
+{
+    float: left;
+    margin-left: -50px;
+    margin-top: -135px;
+}
+#logoImg
+{
+    width: 400px;
+    height: 400px;
+}
+
+    /* navigation */
+#navigation
+{
+    float: right;
+    margin-right: 100px;
+    margin-top: 3px;
+}
+
+.linkQuarantine
+{
+    color: rgb(174, 169, 169);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+
+#arrowDown
+{
+    border: solid rgb(174, 169, 169);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    margin-left: 15px;
+    margin-bottom: 4px;
+}
+
+li a, .linkQuarantine 
+{
+    display: inline-block;
+    padding: 14px 16px;
+}
+  
+.dropDownContent 
+{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.dropDownContent a 
+{
+    color: rgb(174, 169, 169);
+    font-size: 20px;
+    font-family: Poppins;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropDownContent a:hover 
+{
+    background-color: rgb(233, 78, 39);
+}
+
+.dropDown:hover .dropDownContent 
+{
+    display: block;
+}
+
+
+/* content */
+#content
+{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* background-color: aquamarine; */
+}
+
+
+
+#informationContainer{
+    height: auto;
+    margin-top: 75px;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-bottom: 105px;
+    text-align: center;
+    border: 5px solid white;
+}
+
+#title{
+    margin-top: 20px;
+    color: rgb(233, 78, 39);
+    font-size: 35px;
+    font-family: Poppins;
+}
+
+input::placeholder {
+    /* text-align: ; */
+    padding-left: 10px;
+}
+
+#fullnameContainer{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#fullnameInput1{
+    height: 25px;
+    width: 150px;
+    margin-right: 14px;
+}
+
+#fullnameInput2{
+    height: 25px;
+    width: 150px;
+    margin-left: 14px;
+
+}
+#fullnameMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    /* visibility: hidden; */
+}
+
+#usernameContainer{
+    margin-bottom: 20px;
+    /* margin-right: 160px; */
+}
+
+#usernameInput{
+    height: 25px;
+    width: 336px;
+}
+
+#usernameMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    /* visibility: hidden; */
+}
+
+#emailContainer{
+    margin-bottom: 20px;
+}
+
+#emailInput{
+    height: 25px;
+    width: 336px;
+}
+
+#emailMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    /* visibility: hidden; */
+}
+
+#passwordContainer{
+    margin-bottom: 20px;
+}
+
+#passwordInput{
+    height: 25px;
+    width: 336px;
+}
+
+#passwordMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    /* visibility: hidden; */
+}
+
+#numberCopiesContainer{
+    margin-bottom: 20px;
+}
+
+#numberCopiesInput{
+    height: 25px;
+    width: 336px;
+}
+
+#numberCopiesMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    /* visibility: hidden; */
+}
+
+#gameTypeContainer{
+    margin-bottom: 20px;
+}
+
+#gameTypeInput{
+    height: 25px;
+    width: 336px;
+}
+
+#gameTypeMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    /* visibility: hidden; */
+}
+
+#agreementContainer{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#agreementText{
+    color: rgb(233, 78, 39);
+    font-size: 17px;
+    font-family: Poppins;
+}
+
+#agreementInput{
+    margin-top: 15px;
+}
+
+#agreementMessage{
+    color: rgb(233, 78, 39);
+    font-size: 15px;
+    font-family: Poppins;
+    display: none;
+    /* visibility: hidden; */
+}
+
+#btnContainer{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#preOrderBtn{
+    width: 100%;
+    background-color: rgb(233, 78, 39);
+    font-size: 30px;
+    border: none;
+    font-family: Poppins;
+    color: white;
+    opacity: 90%;
+    transition-duration: 0.4s;
+}
+
+#preOrderBtn:hover{
+    background-color: tomato;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer
+{
+    /* top: 100px; */
+    position: relative;
+    width: 100%;
+    height: 185px;
+    background-color: black;
+    opacity: 86%;
+    box-shadow: -16px -25px 55px 10px;
+}
+
+#imgFooter
+{
+    text-align: center;
+}
+
+#imgFooter1
+{
+    margin-right: 20px;
+}
+
+#imgFooter2
+{
+    margin-left: 20px;
+}
+
+#copyright
+{
+    margin-top: 27px;
+    font-size: 15px;
+    font-family: Poppins;
+    text-align: center;
+    color: rgb(187, 186, 186);
+}
+
+
+
+
+
+
+
+
+
+/* responsive web */
+@media screen and (max-width: 800px) {
+    #container{
+        width: 100%;
+    }
+    
+    #header{
+        width: 100%; 
+    }
+
+   #logoImg{
+        width: 350px;
+        height: 350px;
+        margin-top: 12px;
+   }
+
+   #navigation{
+       margin-right: 16px;
+   }
+
+   .linkQuarantine
+   {
+       color: rgb(174, 169, 169);
+       text-decoration: none;
+       font-size: 15px;
+       font-family: Poppins;
+   }
+
+   #arrowDown
+    {
+        border: solid rgb(174, 169, 169);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+
+   .dropDownContent a 
+    {
+        color: rgb(174, 169, 169);
+        font-size: 15px;
+        font-family: Poppins;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    
+
+    #informationContainer{
+        height: auto;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 145px;
+        text-align: center;
+        border: 5px solid white;
+        
+    }
+
+    #titleContainer{
+        margin-top: 26px;
+    }
+    
+    
+    #title{
+        color: rgb(233, 78, 39);
+        font-size: 21px;
+        font-family: Poppins;
+    }
+    
+    input::placeholder {
+        padding-left: 10px;
+    }
+
+    #fullnameContainer{
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    #fullnameInput1{
+        height: 15px;
+        width: 100px;
+        margin-right: 4px;
+    }
+    
+    #fullnameInput2{
+        height: 15px;
+        width: 100px;
+        margin-left: 4px;
+    }
+    #fullnameMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        /* visibility: hidden; */
+    }
+    
+    #usernameContainer{
+        margin-bottom: 20px;
+        /* margin-right: 160px; */
+    }
+
+    #usernameInput{
+        height: 15px;
+        width: 215px;
+    }
+    
+    #usernameMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        /* visibility: hidden; */
+    }
+    
+    #emailContainer{
+        margin-bottom: 20px;
+    }
+    
+    #emailInput{
+        height: 15px;
+        width: 215px;
+    }
+    
+    #emailMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        /* visibility: hidden; */
+    }
+    
+    #passwordContainer{
+        margin-bottom: 20px;
+    }
+    
+    #passwordInput{
+        height: 15px;
+        width: 215px;
+    }
+    
+    #passwordMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        /* visibility: hidden; */
+    }
+    
+    #numberCopiesContainer{
+        margin-bottom: 20px;
+    }
+    
+    #numberCopiesInput{
+        height: 15px;
+        width: 215px;
+    }
+    
+    #numberCopiesMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        /* visibility: hidden; */
+    }
+    
+    #gameTypeContainer{
+        margin-bottom: 20px;
+    }
+    
+    #gameTypeInput{
+        height: 15px;
+        width: 215px;
+    }
+    
+    #gameTypeMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        /* visibility: hidden; */
+    }
+    
+    #agreementContainer{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    #agreementText{
+        color: rgb(233, 78, 39);
+        font-size: 13px;
+        font-family: Poppins;
+    }
+    
+    #agreementInput{
+        margin-top: 15px;
+    }
+    
+    #agreementMessage{
+        color: rgb(233, 78, 39);
+        font-size: 15px;
+        font-family: Poppins;
+        display: none;
+        /* visibility: hidden; */
+    }
+    
+    #btnContainer{
+        margin-bottom: 20px;
+        margin-left: 77px;
+        margin-right: 77px;
+    }
+    
+    #preOrderBtn{
+        width: 100%;
+        background-color: rgb(233, 78, 39);
+        font-size: 30px;
+        border: none;
+        font-family: Poppins;
+        color: white;
+        opacity: 90%;
+        transition-duration: 0.4s;
+    }
+    
+    #preOrderBtn:hover{
+        background-color: tomato;
+    }
+
+    #imgFooter
+    {
+        text-align: center;
+    }
+
+    #imgFooter1
+    {
+        margin-right: 20px;
+        width: 55px;
+        height: 75px;
+    }
+
+    #imgFooter2
+    {
+        margin-left: 20px;
+        width: 55px;
+        height: 75px;
+    }
+
+    #copyright
+    {
+        margin-top: 27px;
+        font-size: 13px;
+        font-family: Poppins;
+        text-align: center;
+        color: rgb(187, 186, 186);
+    }
+
+
+
+
+   
+}

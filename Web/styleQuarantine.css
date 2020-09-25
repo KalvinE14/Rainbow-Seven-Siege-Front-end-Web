@@ -1,0 +1,472 @@
+/* container */
+#container
+{
+    background-image:url("../assets/background.png");
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -99;
+}
+
+
+
+
+
+/* header */
+#header
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 86%;
+    box-shadow: -16px 25px 55px 10px;
+    z-index: 99;
+}
+
+    /* logo */
+#logo
+{
+    float: left;
+    margin-left: -50px;
+    margin-top: -135px;
+}
+#logoImg
+{
+    width: 400px;
+    height: 400px;
+}
+
+    /* navigation */
+#navigation
+{
+    float: right;
+    margin-right: 100px;
+    margin-top: 3px;
+}
+
+.linkQuarantine
+{
+    color: rgb(174, 169, 169);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+
+#arrowDown
+{
+    border: solid rgb(174, 169, 169);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    margin-left: 15px;
+    margin-bottom: 4px;
+}
+
+li a, .linkQuarantine 
+{
+    display: inline-block;
+    padding: 14px 16px;
+}
+  
+.dropDownContent 
+{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.dropDownContent a 
+{
+    color: rgb(174, 169, 169);
+    font-size: 20px;
+    font-family: Poppins;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropDownContent a:hover 
+{
+    background-color: rgb(233, 78, 39);
+}
+
+.dropDown:hover .dropDownContent 
+{
+    display: block;
+}
+
+
+/* content */
+#content
+{
+    margin-top: 55px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* background-color: aquamarine; */
+}
+
+#titleContainer{
+    height: auto;
+    margin-top: 169px;
+    margin-left: 62px;
+    margin-right: 70px;
+    /* background-color: aqua; */
+}
+
+#titleText{
+    
+    font-family: Poppins;
+    font-size: 66px;
+    color: rgb(233, 78, 39);
+    text-align: center;
+    /* margin-right: 220px; */
+}
+
+#imgTeaserContainer{
+    /* display: flex; */
+    margin-left: 62px;
+    margin-right: 70px;
+    position: relative;
+    height: 350px;
+    margin-top: 50px;
+    /* background-color: teal; */
+}
+
+#imgTeaserContainer1{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+#teaser1{
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+#teaserImg1{
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+}
+
+#imgTeaserContainer2{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+#teaser2{
+    margin-right: 50px;
+    position: relative;
+}
+
+#teaserImg2{
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+}
+
+#description
+{
+    height: 300px;
+    margin-top: 335px;
+    margin-left: 62px;
+    margin-right: 70px;
+    margin-bottom: 205px;
+}
+
+#descriptionTitle{
+    font-family: Poppins;
+    font-size: 35px;
+    color: rgb(233, 78, 39);
+    text-align: center;
+}
+
+#descriptionText{
+    font-family: Poppins;
+    font-size: 20px;
+    color: rgb(174, 169, 169);
+    text-align: center;
+}
+
+#release{
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 62px;
+    margin-right: 70px;
+}
+
+#releaseDateText{
+    font-family: Poppins;
+    font-size: 35px;
+    color: rgb(233, 78, 39);
+    text-align: center;
+}
+
+#releaseDate{
+    margin-top: 30px;
+    font-family: Poppins;
+    font-size: 35px;
+    color: rgb(174, 169, 169);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer
+{
+    /* top: 100px; */
+    position: relative;
+    width: 100%;
+    height: 185px;
+    background-color: black;
+    opacity: 86%;
+    box-shadow: -16px -25px 55px 10px;
+}
+
+#imgFooter
+{
+    text-align: center;
+}
+
+#imgFooter1
+{
+    margin-right: 20px;
+}
+
+#imgFooter2
+{
+    margin-left: 20px;
+}
+
+#copyright
+{
+    margin-top: 27px;
+    font-size: 15px;
+    font-family: Poppins;
+    text-align: center;
+    color: rgb(187, 186, 186);
+}
+
+
+
+
+
+
+
+
+
+/* responsive web */
+@media screen and (max-width: 800px) {
+    #container{
+        width: 100%;
+    }
+    
+    #header{
+        width: 100%; 
+    }
+
+   #logoImg{
+        width: 350px;
+        height: 350px;
+        margin-top: 12px;
+   }
+
+   #navigation{
+       margin-right: 6px;
+   }
+
+   .linkQuarantine
+    {
+        color: rgb(174, 169, 169);
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Poppins;
+    }
+
+    #arrowDown
+    {
+        border: solid rgb(174, 169, 169);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+
+    .dropDownContent a 
+    {
+        color: rgb(174, 169, 169);
+        font-size: 15px;
+        font-family: Poppins;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    #content
+    {
+        margin-top: 55px;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #titleContainer{
+        height: auto;
+        margin-top: 75px;
+        margin-left: 62px;
+        margin-right: 70px;
+    }
+
+    #titleText{
+        
+        font-family: Poppins;
+        font-size: 40px;
+        color: rgb(233, 78, 39);
+        text-align: center;
+    }
+
+    
+    #imgTeaserContainer1{
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    #teaser1{
+        margin-left: 5px;
+        margin-right: 5px;
+        position: relative;
+    }
+
+    #teaserImg1{
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+    }
+
+    #imgTeaserContainer2{
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    #teaser2{
+        margin-left: -95px;
+        margin-right: -95px;
+        position: relative;
+    }
+
+    #teaserImg2{
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+    }
+
+    #description
+    {
+        height: 300px;
+        margin-top: 85px;
+        margin-left: 62px;
+        margin-right: 70px;
+        margin-bottom: 335px;
+    }
+    
+    #descriptionTitle{
+        font-family: Poppins;
+        font-size: 27px;
+        color: rgb(233, 78, 39);
+        text-align: center;
+    }
+    
+    #descriptionText{
+        font-family: Poppins;
+        font-size: 17px;
+        color: rgb(174, 169, 169);
+        text-align: center;
+    }
+    
+    #release{
+        height: 300px;
+        margin-top: 40px;
+        margin-left: 62px;
+        margin-right: 70px;
+    }
+    
+    #releaseDateText{
+        font-family: Poppins;
+        font-size: 26px;
+        color: rgb(233, 78, 39);
+        text-align: center;
+    }
+    
+    #releaseDate{
+        margin-top: 30px;
+        font-family: Poppins;
+        font-size: 26px;
+        color: rgb(174, 169, 169);
+        text-align: center;
+    }
+
+    #imgFooter
+    {
+        text-align: center;
+    }
+
+    #imgFooter1
+    {
+        margin-right: 20px;
+        width: 55px;
+        height: 75px;
+    }
+
+    #imgFooter2
+    {
+        margin-left: 20px;
+        width: 55px;
+        height: 75px;
+    }
+
+    #copyright
+    {
+        margin-top: 27px;
+        font-size: 13px;
+        font-family: Poppins;
+        text-align: center;
+        color: rgb(187, 186, 186);
+    }
+
+}

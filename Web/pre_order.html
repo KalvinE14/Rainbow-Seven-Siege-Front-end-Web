@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePreOrder.css">
+    <title>Pre-Order</title>
+</head>
+<body>
+    <div id="container">
+        <!-- <img src="..\assets\forest-1208296_1920.jpg" alt="backgroundHome"> -->
+        <div id="header">
+            <div id="logo">
+                <img id="logoImg" src="..\assets\Logo.png" alt="logo">
+            </div>
+
+            <div id="navigation">
+                <ul>
+                    <li class="dropDown">
+                        <a href="pre_order.html" class="linkQuarantine">Pre-Order<i id="arrowDown"></i></a> 
+                        <div class="dropDownContent">
+                            <a href="home.html">Home</a>
+                            <a  href="operator.html">Operators</a>
+                            <a  href="maps.html">Maps</a>
+                            <a  href="quarantine.html">Quarantine</a>
+                        </div>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+
+        <div id="content">
+            
+
+            <div id="informationContainer">
+                <div id="titleContainer">
+                    <div id="title">
+                        Pre-Order
+                    </div>
+                </div>
+                <form action="#">
+                    <div id="fullnameContainer">
+                        <input type="text" name="fullname" id="fullnameInput1" placeholder="First Name"> 
+                        <input type="text" name="fullname" id="fullnameInput2" placeholder="Last Name"> <br>
+                        <p id="fullnameMessage"></p>
+
+                    </div>
+
+                    <div id="usernameContainer">
+                        <input type="text" name="username" id="usernameInput" placeholder="Username"> <br>
+                        <p id="usernameMessage"></p>
+                    </div>
+                    
+                    <div id="emailContainer">
+                        <input type="email" name="email" id="emailInput" placeholder="Email"> <br>
+                        <p id="emailMessage"></p>
+                    </div>
+
+                    <div id="passwordContainer">
+                        <input type="password" name="password" id="passwordInput" placeholder="Password"><br>
+                        <p id="passwordMessage"></p>
+                    </div>
+                    
+                    <div id="numberCopiesContainer">
+                        <input type="number" name="numberCopies" id="numberCopiesInput" placeholder="Number of copies"><br>
+                        <p id="numberCopiesMessage"></p>
+                    </div>
+                    
+                    <div id="gameTypeContainer">
+                        <input type="text" name="gameType" id="gameTypeInput" placeholder="Type of the game"><br>
+                        <p id="gameTypeMessage"></p>
+                    </div>
+                        
+                    <div id="agreementContainer">
+                        <input type="checkbox" name="agreement" id="agreementInput">
+                        <label id="agreementText" for="agreementInput">I agree to the terms of the Ubipost 
+                            Subscribe Agreement(last update 30 Apr, 2019)</label> <br>
+                        <p id="agreementMessage"></p>
+                    </div>
+
+                    <div id="btnContainer">
+                        <input type="button" name="preOrderBtn" id="preOrderBtn" value="Submit" onclick="validateForm()">
+                    </div>
+                </form>
+            </div>
+        </div>
+ 
+        <div id="footer">
+            <div id="imgFooter">
+               <img id="imgFooter1" src="..\assets\download.png" alt="Privacy Certified" width="75px" height="95px"> 
+               <img id="imgFooter2" src="..\assets\322px-ESRB_Mature_17+.svg.png" alt="Age Restricted" width="75px" height="95px">
+            </div>
+
+            <div id="copyright">
+                Copyright &copy; 2020 Ubipost. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="javascriptPreOrder.js"></script>
+    
+</body>
+</html>
